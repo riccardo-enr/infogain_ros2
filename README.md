@@ -18,6 +18,8 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 
 # References
 
+**FSMI**
+
 ```bibtex
 @ARTICLE{Zhang2020-gi,
   title     = "{FSMI}: Fast computation of Shannon mutual information for
@@ -38,6 +40,8 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 }
 ```
 
+**FSMI Implementation** with OcTree
+
 ```bibtex
 @ARTICLE{Asgharivaskasi2023-zb,
   title     = "Semantic {OcTree} mapping and Shannon mutual information
@@ -56,6 +60,8 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
   language  = "en"
 }
 ```
+
+**FCMI**
 
 ```bibtex
 @INPROCEEDINGS{Henderson2020-tq,
