@@ -18,7 +18,7 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 
 # References
 
-```latex
+```bibtex
 @ARTICLE{Zhang2020-gi,
   title     = "{FSMI}: Fast computation of Shannon mutual information for
                information-theoretic mapping",
@@ -38,7 +38,7 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 }
 ```
 
-```latex
+```bibtex
 @ARTICLE{Asgharivaskasi2023-zb,
   title     = "Semantic {OcTree} mapping and Shannon mutual information
                computation for robot exploration",
@@ -57,7 +57,7 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 }
 ```
 
-```latex
+```bibtex
 @INPROCEEDINGS{Henderson2020-tq,
   title     = "An efficient and continuous approach to information-theoretic
                exploration",
