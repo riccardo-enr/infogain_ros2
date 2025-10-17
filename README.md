@@ -8,6 +8,7 @@ For now the goal is to have algorithms such as:
 
 - CSQMI - Cauchy-Schwarz Quadratic Mutual Information
 - FSMI - Fast Shannon Mutual Information
+- FCMI - Fast Continous Mutual Information
 
 > [!WARNING]
 > This is used as a submodule for another meta repository. Which has been left
@@ -17,7 +18,7 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 
 # References
 
-```
+```latex
 @ARTICLE{Zhang2020-gi,
   title     = "{FSMI}: Fast computation of Shannon mutual information for
                information-theoretic mapping",
@@ -37,7 +38,7 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
 }
 ```
 
-```
+```latex
 @ARTICLE{Asgharivaskasi2023-zb,
   title     = "Semantic {OcTree} mapping and Shannon mutual information
                computation for robot exploration",
@@ -53,5 +54,21 @@ All the nodes (algorithms) should be GPU accelerated. Since they are used in pai
   doi       = "10.1109/tro.2023.3245986",
   issn      = "1552-3098,1941-0468",
   language  = "en"
+}
+```
+
+```latex
+@INPROCEEDINGS{Henderson2020-tq,
+  title     = "An efficient and continuous approach to information-theoretic
+               exploration",
+  author    = "Henderson, Theia and Sze, Vivienne and Karaman, Sertac",
+  booktitle = "2020 IEEE International Conference on Robotics and Automation
+               (ICRA)",
+  publisher = "IEEE",
+  pages     = "8566--8572",
+  month     =  may,
+  year      =  2020,
+  url       = "http://dx.doi.org/10.1109/icra40945.2020.9196592",
+  doi       = "10.1109/icra40945.2020.9196592"
 }
 ```
