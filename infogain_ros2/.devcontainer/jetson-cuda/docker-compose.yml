@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+  # Jetson Xavier NX simulation (ARM64 on x86 via QEMU)
+  jetson-sim:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DEVICE_TYPE: jetson
+      platforms:
+        - linux/arm64
+    platform: linux/arm64
+    image: jetson-sim:jazzy-arm64
+    container_name: jetson_xavier_nx_sim
+    privileged: true
+    volumes:
+      - ./:/workspaces/infogain_ros2
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY=${DISPLAY}
+      - ROS_DOMAIN_ID=0
+    network_mode: host
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+  # Native x86 development with CUDA
+  native-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DEVICE_TYPE: cuda
+      platforms:
+        - linux/amd64
+    platform: linux/amd64
+    image: native-dev:jazzy-cuda
+    container_name: native_dev
+    runtime: nvidia
+    privileged: true
+    volumes:
+      - ./:/workspaces/infogain_ros2
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY=${DISPLAY}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - ROS_DOMAIN_ID=0
+    network_mode: host
+    stdin_open: true
+    tty: true
+    command: /bin/bash
